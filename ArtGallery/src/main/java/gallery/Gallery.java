@@ -12,10 +12,15 @@ public class Gallery {
     this.name = newGalleryName;
     this.till = newTill;
     this.artworkList = new ArrayList<>();
-    
-    
-    
+
+
+
     }
- 
-    
+
+    public void acceptPayment(int payment){
+      till += payment;
+      
+    }
+
+
 }
