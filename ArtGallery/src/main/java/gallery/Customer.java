@@ -3,23 +3,30 @@ package gallery;
 
     public class Customer {
 
-        private final int price;
         public String name;
         public int wallet;
-        public Artwork artwork;
 
 
-        public Customer(String newName, int newWallet, Artwork artwork){
+
+        public Customer(String newName, int newWallet){
             this.name = newName;
             this.wallet = newWallet;
-            this.price = artwork.price;
                     
 
 
         }
 
-        public int walletBalance(){
-            return this.wallet - this.price;
+        public int getWallet(){
+            return wallet;
+        }
+        public void setWallet(int wallet){
+            this.wallet=wallet;
+        }
+
+        public void buyArtwork(int price){
+            wallet-= price;
+            setWallet(this.wallet);
+            System.out.println("customer's balance now is: "+wallet);
             
         }
 

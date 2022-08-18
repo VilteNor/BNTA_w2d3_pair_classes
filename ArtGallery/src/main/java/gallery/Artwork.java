@@ -5,13 +5,13 @@ import java.util.ArrayList;
 public class Artwork {
 
     public String title;
-    public String artist;
+    public Artist artist;
     public int price;
     public int nft;
 
-    public Artwork(String newTitle, String newArtist, int newPrice, int newNft){
+    public Artwork(String newTitle, Artist artist, int newPrice, int newNft){
         this.title = newTitle;
-        this.artist = newArtist;
+        this.artist = artist;
         this.price = newPrice;
         this.nft = newNft;
         
