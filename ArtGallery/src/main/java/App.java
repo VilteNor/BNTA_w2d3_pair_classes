@@ -52,6 +52,18 @@ public static void main(String[] args){
     System.out.println("customer1 updated wallet: "+customer1.getWallet());
 
 
-    }
+
+
+    // customer1 buys artwork3 but doesn't have any more money
+    customer1.buyArtwork(artwork2.price);
+
+    // gallery's till holds:
+    System.out.println("till holds: "+ gallery1.getTill());
+    // customer's current wallet:
+    System.out.println("customer1 wallet: "+customer1.getWallet());
+
+
+
+}
 
 }

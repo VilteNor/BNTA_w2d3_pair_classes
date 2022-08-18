@@ -24,9 +24,17 @@ package gallery;
         }
 
         public void buyArtwork(int price){
+        if(this.wallet>price){
             wallet-= price;
             setWallet(this.wallet);
             System.out.println("customer's balance now is: "+wallet);
+        }
+        else{
+            System.out.println("sorry, you don't have any money to purchase artwork.");
+        }
+
+
+
             
         }
 
